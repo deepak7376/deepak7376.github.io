@@ -29,5 +29,5 @@ I completed my Bachelor’s degree in Electronics & Communication Engg. at Uttar
 -   M.Tech. in Information Technology, 2017-2019
     Indian Institute of Engineering Science and Technology, Shibpur, India
     
--   B.Tech. in Mathematics & Computing, 2013-2017
+-   B.Tech. in Electronics & Communication Engg., 2010-2014
     Uttar Pradesh Technical University, India
