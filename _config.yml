@@ -33,12 +33,3 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-
-highlighter: rouge
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
