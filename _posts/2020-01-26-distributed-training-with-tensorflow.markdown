@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Distributed Training with Tensorflow!"
+title:  "Distributed Training with Tensorflow"
 date:   2020-01-26 00:04:58 +0530
 categories: general
 ---
 
-# Distributed Training with Tensorflow.
 
 ![title](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F3359678%2Fbc040059979a8b2df758c14e3b26027a%2Fdistributed-training-logo.png?generation=1580102298202305&alt=media)
 
@@ -78,6 +77,7 @@ As you see in the figure is that a neural network having two layers (layer A, la
 |![](https://miro.medium.com/max/1400/1*dnRNfa5PTn8Efn7bvie3PQ.png)|
 |:--:|
 |Fig.6 - Central Storage Strategy|
+
 5. **One Device Strategy**
 
 - Run-on a single device GPU or CPU
