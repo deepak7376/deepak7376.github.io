@@ -38,7 +38,7 @@ Ex: sudo apt-get install python3.10-distutils
 - $ sudo apt-get install python3-pip -y 
 - $ sudo python3 -m pip install --upgrade pip 
 
-# Note: If you are getting error while installing pip use this method
+### Note: If you are getting error while installing pip use this method
 - $ curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 - $ python3 -m pip install --upgrade pip
 
