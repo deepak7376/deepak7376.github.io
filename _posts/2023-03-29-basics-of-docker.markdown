@@ -36,20 +36,21 @@ docker rmi $(docker images -qf "dangling=true")
 ```
 ### 2. Run Docker Image inside a container
 Now we have docker image now run it inside the container.
-syntax for docker run
+
+```bash
+ex: docker run -it <image>
+ex: docker exec -it <CID> execute the cmd inside docker
+docker run -d -it –name myubuntu ubuntu
 ```
+- syntax for docker run
+
+```sh
 docker run -it -d ubuntu
   --detach (-d) detach run in background, 
  --attach(-a) attach, 
  --name : assign name to container
  --volume (-v) : bind mount a volume, 
  --workdir (-w) : working directory inside container
- ```
-```bash
-ex: docker run -it <image>
-ex: docker exec -it <CID> execute the cmd inside docker
-docker run -d -t –name myubuntu ubuntu
-
 ```
 
 ### 3.Execute command inside docker
