@@ -93,19 +93,19 @@ docker ps (only running container)
 ```bash
 docker run -it --name <CONTAINER NAME> -p 8888:8888 --volume c:/Data:/Data --workdir /Data/ <IMAGE NAME> bash
 ```
-Mount volume
+- Mount volume
 ```bash
 docker run -v /does not/exist:/foo -w /foo -i -t ubuntu bash
 ```
 Note: for windows use full path with forward slash (/) not backward
 Note: When the host directory of a bind-mounted volume doesn’t exist, Docker will automatically create this directory on the host for you. In the example above, Docker will create the ```/does not/exist``` folder before starting your container.
 
-Attach multiple volume in container
+- Attach multiple volume in container
 ```bash
 docker run --name linuxMachine -p 8000:8000 -v c:/eSensor/hdd1:/hdd1 -v c:/eSensor/hdd2:/hdd2 -i -t ubuntu:18.04 bash
 ```
 
-Use this most of time (Default container creation setting)
+- Use this most of time (Default container creation setting)
 ```bash
 docker run -it --name tf-models --gpus all --network host  -v /home/deepak/Task/models:/home/models -w /home/models tensorflow/tensorflow bash
 ```
