@@ -8,17 +8,18 @@ categories: general
 
 
 # Installing Python
-
-- $ sudo apt-get install software-properties-common
-- $ sudo add-apt-repository ppa:deadsnakes/ppa
-- $ sudo apt-get update
-- $ sudo apt-get install python3.10 
-- $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
-- $ sudo ln -f /usr/bin/python3.10 /usr/bin/python3
-
+```console
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.10 
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
+sudo ln -f /usr/bin/python3.10 /usr/bin/python3
+```
 # Check Python version
-- $ python3 --version (it should be 3.10.# )
-
+```console
+- python3 --version (it should be 3.10.# )
+```
 
 note: The packages provided here are loosely based on the debian upstream packages with some modifications to make them more usable as non-default pythons 
 and on ubuntu.  As such, the packages follow debian's patterns and often do not include a full python distribution with just `apt install python#.#`.  
@@ -34,11 +35,12 @@ Here is a list of packages that may be useful along with the default install:
 Ex: sudo apt-get install python3.10-distutils
 
 # Setuptools & Pip
-
-- $ sudo apt-get install python3-pip -y 
-- $ sudo python3 -m pip install --upgrade pip 
-
+```console
+sudo apt-get install python3-pip -y 
+sudo python3 -m pip install --upgrade pip 
+```
 ### Note: If you are getting error while installing pip use this method
-- $ curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
-- $ python3 -m pip install --upgrade pip
-
+```console
+curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+python3 -m pip install --upgrade pip
+```
