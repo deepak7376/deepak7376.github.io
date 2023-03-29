@@ -16,35 +16,20 @@ CMD ["node", "src/index.js"]
 EXPOSE 3000
 ```
 
-RUN, CMD and Entrypoint can be written into two forms shell form and exec form
-- Shell form
-```bash
-/bin/sh -c <Command>
-```
-- Exec form
-```sh
-<instruction>[“executable”, “param1”, “param2”]
-Ex: CMD[“python”, “run”, “app.py”]
-```
-Command running sequence:
-[ENTRYPOINT] <from bash> or [CMD]
-If bash command is running then CMD is ignored.
-Note: If you are creating docker image via dockefile then you need to build it first.
-
 ```bash
 # ex: docker build -t <Image-name> <Dockerfile path>
 docker build -t getting-started .
 ```
-Check all docker images available
+- Check all docker images available
 ```bash
 docker images
 ```
 
-Remove images
+- Remove images
 ```bash
 docker rmi <image id>
 ```
-Remove dangling images
+- Remove dangling images
 ```bash
 docker images -qf "dangling=true" (its check the dangling image)
 docker rmi $(docker images -qf "dangling=true")
@@ -124,7 +109,7 @@ Use this most of time (Default container creation setting)
 docker run -it --name tf-models --gpus all --network host  -v /home/deepak/Task/models:/home/models -w /home/models tensorflow/tensorflow bash
 ```
 
-#### 11. Docker compose 
+### 11. Docker compose 
 Docker compose is basically combination of = docker build + docker run command
 ```bash
 docker build -t <IMAGE_NAME> <DIR_NAME>  ( it create image from docker file)
