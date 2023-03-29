@@ -15,7 +15,7 @@ RUN yarn install --production
 CMD ["node", "src/index.js"]
 EXPOSE 3000
 ```
-
+- If you creating image via dockerfile the you to build it first
 ```bash
 # ex: docker build -t <Image-name> <Dockerfile path>
 docker build -t getting-started .
