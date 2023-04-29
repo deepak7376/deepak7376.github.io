@@ -1,12 +1,12 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS
+title: Deepak Yadav Blog
+description: Just a beginning of my writing.
 
-url: https://long-haul.netlify.app
+url: https://deepak7376.github.io
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
 # Header Option
-# header: large
+header: large
 
 sass:
     style: compressed
@@ -25,13 +25,13 @@ navigation:
       url: /contact
 
 social:
-    github: brianmaierjr
-    twitter: brianmaierjr
-    facebook: brianmaierjr
-    email: brimaidesigns@gmail.com
-    linkedin: brianmaierjr
+    github: deepak7376
+    twitter: ydeepak92
+    facebook: deepakkrishnayadav
+    email: dky.united@gmail.com
+    linkedin: dky7376
 
 google_analytics: "UA-58263416-1"
 
 disqus:
-    shortname: brianmaierjr
+    shortname: disqus_wOwOpoPJh2
