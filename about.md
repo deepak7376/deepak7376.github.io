@@ -1,24 +1,31 @@
 ---
 layout: default
-title: About Long Haul
+title: About Me
 ---
 
 <div class="post">
-	<h1 class="pageTitle">About Long Haul</h1>
-	<img src="{{ '/assets/img/touring.jpg' }}" alt="">
-	<p class="intro">Long Haul is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p>
-	<p>Long Haul was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
-	<h2>Features</h2>
-	<ul>
-		<li>Built with the <a href="https://github.com/jekyll/jekyll-sass-converter">Jekyll SASS convertor</a> plugin</li>
-  		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
-  		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
-  		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
-  		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
-      <li>5 Post Loop with excerpt on Home Page</li>
-  		<li>Previous / Next Post Navigation</li>
-      <li>Estimated Reading Time for posts</li>
-  		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
-  		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
-  	</ul>
+	<h1 class="pageTitle">About Me</h1>
+	<img src="{{ '/assets/img/deepak-profile-pic2.jpeg' }}" alt="">
+	<p>Hi! I’m a Consultant working on IMX500 Intelligent Vision Sensor at SONY.</p>
+    <p>Prior to that, I was an Associate Data Scientist at Activa Inc. India, where I helped to build the autoML tool for forecasting the time series data. In Summer 2019, I interned at Activa Inc. where I helped to build Object Detection Model to detect the cracks in the aeroplane engine using Boroscope device.</p>
+    <p>I completed my MTech. in IT at Indian Institute of Engineering Science and Technology, Shibpur, where I was advised by Prof. Tuhina Samantha in the field of wireless sensor network (WSNs), working on fault detection algorithms for wireless sensor networks. I completed my Bachelor’s degree in Electronics &amp; Communication Engg. at Uttar Pradesh Technical University.</p>
+    <h3>News</h3>
+    <ul>
+        <li>May 2021: Joined SONY as a Consultant on the ESensor team</li>
+        <li>Dec 2019: Worked as a Associate Data Scientist at Activa Inc.</li>
+        <li>Jun 2019: Completed my MTech in IT from IIEST, Shibpur</li>
+        <li>Jan 2018: Serving as Assistant for Communication Lab at IIEST Shibpur</li>
+    </ul>
+    <h3>Interests</h3>
+    <ul>
+        <li>Systems for Deep Learning</li>
+        <li>Neural Architecture Search</li>
+        <li>Computer Vision</li>
+        <li>High-Performance Computing</li>
+    </ul>
+    <h3>Education</h3>
+    <ul>
+        <li>M.Tech. in Information Technology, 2017-2019<br>Indian Institute of Engineering Science and Technology, Shibpur, India</li>
+        <li>B.Tech. in Electronics &amp; Communication Engg., 2010-2014<br>Uttar Pradesh Technical University, India</li>
+    </ul>
 </div>
