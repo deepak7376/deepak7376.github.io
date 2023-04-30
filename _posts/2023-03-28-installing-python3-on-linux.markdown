@@ -4,6 +4,7 @@ comments: true
 title:  "Installing Python3 On Linux"
 date:   2020-01-26 00:04:58 +0530
 categories: general
+description: Installing Python for linux OS
 ---
 
 
