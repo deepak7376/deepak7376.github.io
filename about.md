@@ -4,9 +4,6 @@ title: About Me
 ---
 
 <div class="post">
-  <div class="profile">
-    <img src="{{ '/assets/img/deepak-profile-pic2.jpeg' }}" alt="">
-  </div>
   <div class="content">
     <h1 class="pageTitle">About Me</h1>
     <p>Hi! I’m a Consultant working on IMX500 Intelligent Vision Sensor at SONY. Prior to that, I was an Associate Data Scientist at Activa Inc. India.</p>
@@ -33,23 +30,3 @@ title: About Me
     </ul>
   </div>
 </div>
-
-<style>
-.post {
-  display: flex;
-}
-
-.profile {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-
-.profile img {
-  max-width: 200px;
-  height: auto;
-}
-
-.content {
-  flex: 1 1 auto;
-}
-</style>
