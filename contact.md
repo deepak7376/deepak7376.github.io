@@ -5,10 +5,6 @@ title: Contact Deepak Yadav
 
 <div id="contact">
   <h1 class="pageTitle">Contact Me</h1>
-  <div class="contactContent">
-    <p class="intro">This is an example Contact page. If you want to make changes then do so in the <code>contact.html</code> file.</p>
-    <p>The form is provided by <a href="http://formspree.io/">Formspree.</a> Follow the directions on their site to set up the form for use.</p>
-  </div>
   <form action="http://formspree.io/dky.united@gmail.com" method="POST">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" class="full-width"><br>
