@@ -6,6 +6,10 @@ title: About Me
 <div class="post">
   <div class="content">
     <h1 class="pageTitle">About Me</h1>
+    <div class="profile">
+      <img src="assets/img/deepak-profile-pic2.jpeg" alt="Profile Picture" width="150px">
+      <p><a href="assets/resume/resume.pdf" target="_blank">Download Resume</a></p>
+    </div>
     <p>Hi! I’m a Consultant working on IMX500 Intelligent Vision Sensor at SONY. Prior to that, I was an Associate Data Scientist at Activa Inc. India.</p>
     <p>I completed my MTech. in IT at Indian Institute of Engineering Science and Technology, Shibpur, where I worked on fault detection algorithms for wireless sensor networks. I also hold a Bachelor’s degree in Electronics &amp; Communication Engg. from Uttar Pradesh Technical University.</p>
     <h3>News</h3>
@@ -28,6 +32,5 @@ title: About Me
       <li>M.Tech. in Information Technology, 2017-2019<br>Indian Institute of Engineering Science and Technology, Shibpur, India</li>
       <li>B.Tech. in Electronics &amp; Communication Engg., 2010-2014<br>Uttar Pradesh Technical University, India</li>
     </ul>
-    <a href="assets/resume/resume.pdf" target="_blank">Download Resume</a>
   </div>
 </div>
