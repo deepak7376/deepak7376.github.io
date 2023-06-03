@@ -4,6 +4,7 @@ comments: true
 title:  "Show git branch with color in bash prompt"
 date:   2019-01-26 00:04:58 +0530
 categories: general
+description: Show the git branch in the bash command prompt.
 ---
 
 

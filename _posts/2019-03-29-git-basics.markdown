@@ -4,6 +4,7 @@ comments: true
 title:  "Git Basics"
 date:   2019-03-29 00:04:58 +0530
 categories: general
+description: Useful command for git.
 ---
 
 ### 1. Git command
