@@ -28,5 +28,6 @@ title: About Me
       <li>M.Tech. in Information Technology, 2017-2019<br>Indian Institute of Engineering Science and Technology, Shibpur, India</li>
       <li>B.Tech. in Electronics &amp; Communication Engg., 2010-2014<br>Uttar Pradesh Technical University, India</li>
     </ul>
+    <a href="assets/resume/resume.pdf" target="_blank">Download Resume</a>
   </div>
 </div>
