@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Git Basics"
-date:   2023-03-29 00:04:58 +0530
+date:   2019-03-29 00:04:58 +0530
 categories: general
 ---
 

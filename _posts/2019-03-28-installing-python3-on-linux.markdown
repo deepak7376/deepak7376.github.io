@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Installing Python3 On Linux"
-date:   2020-01-26 00:04:58 +0530
+date:   2019-03-28 00:04:58 +0530
 categories: general
 description: Installing Python for linux OS
 ---

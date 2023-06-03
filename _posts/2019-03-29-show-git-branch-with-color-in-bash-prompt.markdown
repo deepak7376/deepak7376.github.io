@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Show git branch with color in bash prompt"
-date:   2020-01-26 00:04:58 +0530
+date:   2019-01-26 00:04:58 +0530
 categories: general
 ---
 

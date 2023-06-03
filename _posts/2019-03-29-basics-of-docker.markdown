@@ -1,3 +1,12 @@
+---
+layout: post
+comments: true
+title:  "Basics-of-docker"
+date:   2019-03-29 00:04:58 +0530
+categories: general
+description: Docker image is onion like layer which is build by docker build command. There are two method to create docker image
+---
+
 
 ### 1. Docker Image
 Docker image is onion like layer which is build by docker build command. There are two method to create docker image

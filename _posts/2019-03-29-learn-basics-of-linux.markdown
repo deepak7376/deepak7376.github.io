@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Learn Basics of Linux"
-date:   2020-03-29 00:04:58 +0530
+date:   2019-03-29 00:04:58 +0530
 categories: linux
 ---
 
