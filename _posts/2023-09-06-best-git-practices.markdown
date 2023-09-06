@@ -4,7 +4,7 @@ comments: true
 title:  "Best-git-practices"
 date:   2023-09-06 00:04:58 +0530
 categories: general
-description: Using Git effectively involves following best practices to ensure a smooth and collaborative development process. Here are some recommended Git best practices:
+description: Using Git effectively involves following best practices to ensure a smooth and collaborative development process. Here are some recommended Git best practices
 ---
 
 
