@@ -7,7 +7,6 @@ title: About Me
   <div class="content">
     <h1 class="pageTitle">About Me</h1>
     <div class="profile">
-      <img src="assets/img/deepak-profile-pic2.jpeg" alt="Profile Picture" width="150px">
       <p><a href="assets/resume/resume.pdf" target="_blank">Download Resume</a></p>
     </div>
     <p>Hi! I’m a Consultant working on IMX500 Intelligent Vision Sensor at SONY. Prior to that, I was an Associate Data Scientist at Activa Inc. India.</p>
