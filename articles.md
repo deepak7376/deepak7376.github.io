@@ -4,7 +4,7 @@ title: Deepak Yadav
 ---
 
 <div id="articles">
-  <h1>Articles</h1>
+  <h3>Articles</h3>
   <ul class="posts noList">
     {%- for post in site.posts -%}
       <li>
