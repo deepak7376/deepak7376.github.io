@@ -1,0 +1,31 @@
+- name: LLM-based-custom-pdf-chatbot
+  description: Chatbot using LLM and Langchain.
+  link: https://github.com/deepak7376/LLM-based-custom-pdf-chatbot
+
+- name: Text to Image Generation Using Stable Diffusion
+  description: High-performance image generation using Stable Diffusion in KerasCV.
+  link: https://github.com/deepak7376/text-to-image-gen
+
+- name: Diffusion Pytorch
+  description: Diffusion Model Implementation using Pytorch From Scratch.
+  link: https://github.com/deepak7376/diffusion_pytorch
+
+- name: Robustbase
+  description: Open Source Python library for statistical estimation with 23,000+ downloads.
+  link: https://github.com/deepak7376/robustbase
+
+- name: HyperTune
+  description: Open source hyper-parameter optimization library using genetic algorithms.
+  link: https://github.com/deepak7376/hypertune
+
+- name: WSNFault
+  description: Statistical fault detection algorithm for Wireless Sensor Networks (WSNs).
+  link: https://github.com/deepak7376/wsnfault
+
+- name: downcast
+  description: Automatic reduction of pandas data frame size with 44,000+ downloads.
+  link: https://github.com/your-username/downcast
+
+- name: complex
+  description: Compute complex number operations addition, subtraction, multiplication, division, and modulus with 32,000+ downloads.
+  link: https://github.com/deepak7376/complex

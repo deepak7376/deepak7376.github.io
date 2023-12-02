@@ -4,7 +4,7 @@ title: Contact Deepak Yadav
 ---
 
 <div id="contact">
-  <h1 class="pageTitle">Contact Me</h1>
+  <h3 class="pageTitle">Contact Me</h3>
   <div class="form-container">
     <!-- modify this form HTML and place wherever you want your form -->
       <form
