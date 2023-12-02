@@ -4,18 +4,18 @@ title: About Me
 ---
 
 <div class="post">
-  <div class="content">
+  <div class="container">
     <h3 class="pageTitle">About Me</h3>
 
-    <div class="two-column-layout">
+    <div class="row">
       <!-- Column for the photo -->
-      <div class="column photo-column">
+      <div class="col-md-2">
         <!-- Replace the URL with the actual URL of your photo -->
-        <img src="https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/6474e5cfa855203d8feca543/RwkwQJyZABdl-Stsylzoc.jpeg?w=200&h=200&f=face" alt="Your Name" class="profile-photo">
+        <img src="https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/6474e5cfa855203d8feca543/RwkwQJyZABdl-Stsylzoc.jpeg?w=200&h=200&f=face" alt="Your Name" class="img-fluid rounded-circle profile-photo">
       </div>
 
       <!-- Column for details -->
-      <div class="column details-column">
+      <div class="col-md-10">
         <p>Hi! I’m a Consultant working on IMX500 Intelligent Vision Sensor at SONY. Prior to that, I was an Associate Data Scientist at Activa Inc. India.</p>
         
         <p>I completed my MTech. in IT at Indian Institute of Engineering Science and Technology, Shibpur, where I worked on fault detection algorithms for wireless sensor networks. I also hold a Bachelor’s degree in Electronics &amp; Communication Engg. from Uttar Pradesh Technical University.</p>
