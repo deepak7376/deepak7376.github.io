@@ -3,6 +3,39 @@ layout: default
 title: Contact Deepak Yadav
 ---
 
+<style>
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  #contact {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .pageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .form-label {
+    font-weight: bold;
+  }
+  .form-control {
+    border-radius: 5px;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+</style>
+
 <div class="container">
   <div id="contact" class="my-5">
     <h3 class="pageTitle text-center mb-4">Contact Me</h3>
