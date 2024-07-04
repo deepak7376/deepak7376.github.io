@@ -6,7 +6,7 @@ title: Contact Deepak Yadav
 <div class="container">
   <div id="contact" class="my-5">
     <h3 class="pageTitle text-center mb-4">Contact Me</h3>
-    <div class="row justify-content-center">
+    <div class="d-flex justify-content-center">
       <div class="col-md-6">
         <form action="https://formspree.io/f/xlekyjwb" method="POST">
           <div class="mb-3">
