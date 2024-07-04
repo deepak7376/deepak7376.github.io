@@ -17,7 +17,7 @@ plugins: [jekyll-paginate]
 paginate: 5
 
 navigation:
-    - title: Blogs
+    - title: Home
       url: /index.html
     - title: Projects
       url: /projects
