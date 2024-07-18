@@ -89,6 +89,24 @@
 		rel="canonical"
 		href="{{ page.url | replace:'index.html','' | prepend: site.url }}"
 	/>
+	<style>
+	    pre {
+	      font-size: 0.875rem;
+	      padding: 0.5rem;
+	      margin: 0.5rem 0;
+	      background-color: #f8f9fa;
+	      border: 1px solid #ddd;
+	      border-radius: 4px;
+	      overflow-x: auto;
+	    }
+	
+	    code {
+	      font-size: 0.875rem;
+	      background-color: #f8f9fa;
+	      padding: 0.2rem 0.4rem;
+	      border-radius: 4px;
+	    }
+  	</style>
 
 	{%- if site.google_analytics -%} {%- include google_analytics.html -%} {%-
 	endif -%}
