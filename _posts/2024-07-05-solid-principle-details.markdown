@@ -1,10 +1,9 @@
 ---
 layout: post
-comments: true
 title:  "SOLID Principles with Code Examples"
 date:   2024-07-05 00:04:58 +0530
 categories: general
-description: SOLID Principles with Code Examples.
+summary: SOLID Principles with Code Examples.
 ---
 ---
 

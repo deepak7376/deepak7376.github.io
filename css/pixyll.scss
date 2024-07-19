@@ -1,0 +1,149 @@
+---
+# The scss file which include files from _sass/
+---
+@charset "UTF-8";
+
+/*!
+* Pixyll - A simple, beautiful Jekyll theme that's mobile first.
+* Crafted with <3 by John Otander (@4lpine) - ©2015-2021 John Otander
+* @link https://github.com/johno/pixyll
+* @license MIT
+*/
+
+@import 'variables';
+@import 'basscss';
+@import 'base';
+@import 'links';
+@import 'positions';
+@import 'clearfix';
+@import 'code';
+@import 'forms';
+@import 'typography';
+@import 'header';
+@import 'tables';
+@import 'animations';
+@import 'footer';
+@import 'social-icons';
+@import 'blockquotes';
+@import 'posts';
+@import 'media-queries';
+@import 'gists';
+@import 'measure';
+@import 'pagination';
+
+// Additional Styles for About Me Page
+
+#about-me {
+  .card {
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  .card-header {
+    background-color: #f7f7f7;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  .card-body {
+    padding: 15px;
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+#projects {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+.pageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.card-body {
+  padding: 1.5rem;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.card-link {
+  color: #007bff;
+  text-decoration: none;
+}
+.card-link:hover {
+  text-decoration: underline;
+}
+
+#resume {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.resume-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  display: inline-block;
+  max-width: 100%;
+}
+.resume-card p {
+  font-size: 1.125rem;
+  color: #555;
+}
+.resume-card a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.resume-card a:hover {
+  background-color: #0056b3;
+}

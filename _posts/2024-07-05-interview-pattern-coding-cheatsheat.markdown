@@ -1,10 +1,9 @@
 ---
 layout: post
-comments: true
 title:  "Interview Coding Patterns Cheatsheet"
 date:   2024-07-05 00:04:58 +0530
 categories: general
-description: Interview Coding Patterns Cheatsheet.
+summary: Interview Coding Patterns Cheatsheet.
 ---
 
 ---

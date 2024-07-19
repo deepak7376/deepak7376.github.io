@@ -1,10 +1,9 @@
 ---
 layout: post
-comments: true
 title:  "Interview Preparation Roadmap"
 date:   2022-01-15 00:04:58 +0530
 categories: general
-description: Consistency and regular practice are key. Stay focused, and you'll be well-prepared for your interviews. Good luck!.
+summary: Consistency and regular practice are key. Stay focused, and you'll be well-prepared for your interviews. Good luck!.
 ---
 
 ### Week 1-2: Fundamentals & Problem-Solving

@@ -1,43 +1,133 @@
-title: Deepak Yadav
-description: Just a beginning of my writing.
+# Site settings
+title:       Deepak Yadav
+email:       dky.united@gmail.com
+author:      Deepak Yadav
+description: "Just a beginning of my writing.."
+baseurl:     ""
+url:         "https://deepak7376.github.io"
+date_format: "%b %-d, %Y"
+header_pages:
+ - projects.md
+ - resume.md
+ - about.md
+ - contact.html
 
-url: https://deepak7376.github.io
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
-
-# Header Option
-header: large
-
-sass:
-    style: compressed
-
-markdown: kramdown
-highlighter: rouge
-plugins: [jekyll-paginate]
-paginate: 5
-
-navigation:
-    - title: Home
-      url: /index.html
-    - title: Projects
-      url: /projects
-    - title: Resume
-      url: /resume
-    # - title: Blog Categories
-    #    url: /blog-categories
-    - title: About
-      url: /about
-    - title: Contact
-      url: /contact
-
-
-social:
-    github: deepak7376
-    twitter: ydeepak92
-    email: dky.united@gmail.com
-    linkedin: dky7376
-
+# Google services
+google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
 google_analytics: "UA-58263416-1"
+google_tag_manager:
+# Bing services
+bing_verification:
 
-disqus:
-    shortname: deepak7376
+# Optional features
+animated:             true
+show_related_posts:   true
+show_post_footers:    true
+show_social_icons:    true
+ajaxify_contact_form: true
+enable_mathjax: true
+extended_fonts: true
+enable_anchorjs: true
+# Preview image for social media aka og:image and twitter:image
+post_preview_image: true
+
+# Facebook Page integration
+# (for instant articles and other stuff)
+fb_page: false
+fb_page_id:
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: deepak7376
+
+# Facebook Comments plugin
+# (leave blank to disable Facebook Comments, otherwise set it to true)
+facebook_comments:
+facebook_appid:
+facebook_comments_number: 10
+
+# Social icons
+github_username: deepak7376
+reddit_username:
+bitbucket_username:
+stackoverflow_id:
+twitter_username: ydeepak92
+skype_username:
+steam_nickname:
+google_plus_id:
+linkedin_username: dky7376
+angellist_username:
+medium_id: deepakec1031
+bitcoin_url:
+paypal_url:
+flattr_button:
+telegram_username:
+vk_id:
+
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: false
+share_linkedin: true
+share_digg: false
+share_tumblr: false
+share_reddit: false
+share_stumbleupon: false
+share_hackernews: false
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share this post!'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  index:
+    coming_soon: 'Coming soon...'
+  contact:
+    email:    'Email Address'
+    content:  'What would you like to say?'
+    subject:  'New submission!'
+    submit:   'Say Hello'
+    ajax:
+      sending:  'sending..'
+      sent:     'Message sent!'
+      error:    'Error!'
+  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
+  og_locale: 'en_US'
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     4
+sass:
+  style: compressed
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - screenshot.png
+  - vendor
