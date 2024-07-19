@@ -89,26 +89,6 @@
 		rel="canonical"
 		href="{{ page.url | replace:'index.html','' | prepend: site.url }}"
 	/>
-	<style>
-	  /* Styling for code blocks */
-	  pre {
-	    font-size: 0.75rem; /* Reduce font size */
-	    padding: 0.5rem; /* Adjust padding inside the code block */
-	    margin: 0.5rem 0; /* Adjust margin around the code block */
-	    background-color: #f5f5f5; /* Light background color for better visibility */
-	    border: 1px solid #ccc; /* Lighter border */
-	    border-radius: 4px; /* Optional: Round corners */
-	    overflow-x: auto; /* Enable horizontal scroll if content is too wide */
-	    max-width: 100%; /* Ensure it doesn’t exceed container width */
-	  }
-	
-	  code {
-	    font-size: 0.75rem; /* Reduce font size for inline code */
-	    background-color: #f5f5f5; /* Match the background color */
-	    padding: 0.2rem 0.4rem; /* Adjust padding */
-	    border-radius: 4px; /* Optional: Round corners for inline code */
-	  }
-	</style>
 
 	{%- if site.google_analytics -%} {%- include google_analytics.html -%} {%-
 	endif -%}
