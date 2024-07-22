@@ -18,6 +18,7 @@ summary: Contains advance python DSA concepts.
     - Graphs
     - Hash Tables
     - Heaps
+
 2. **Algorithms**
     - Sorting
     - Searching
@@ -48,6 +49,8 @@ summary: Contains advance python DSA concepts.
     for element in arr:
         print(element)
     ```
+
+---
 
 #### Linked Lists
 - **Definition**: A linked list is a linear data structure where elements are stored in nodes, with each node pointing to the next.
@@ -85,6 +88,7 @@ summary: Contains advance python DSA concepts.
     ll.append(3)
     ll.print_list()
     ```
+---
 
 #### Stacks
 - **Definition**: A stack is a linear data structure that follows the LIFO (Last In, First Out) principle.
@@ -104,6 +108,7 @@ summary: Contains advance python DSA concepts.
     # Peek
     print(stack[-1])  # 2
     ```
+---
 
 #### Queues
 - **Definition**: A queue is a linear data structure that follows the FIFO (First In, First Out) principle.
@@ -122,6 +127,7 @@ summary: Contains advance python DSA concepts.
     # Dequeue
     queue.popleft()  # 1
     ```
+---
 
 #### Trees
 - **Definition**: A tree is a hierarchical data structure with nodes, where each node has zero or more children.
@@ -160,6 +166,7 @@ summary: Contains advance python DSA concepts.
 
     inorder(root)
     ```
+---
 
 #### Graphs
 - **Definition**: A graph is a collection of nodes (vertices) and edges connecting them.
@@ -196,6 +203,7 @@ summary: Contains advance python DSA concepts.
 
     g.dfs(2)
     ```
+---
 
 #### Hash Tables
 - **Definition**: A hash table is a data structure that maps keys to values using a hash function.
@@ -214,6 +222,61 @@ summary: Contains advance python DSA concepts.
     # Search
     print(hash_table['key2'])  # value2
     ```
+
+- **Code Example**:
+    ```python
+    # Example dictionary with counts
+    count_dict = {'apple': 3, 'banana': 2, 'orange': 1}
+    for key in count_dict.keys():
+        print(key)
+
+    for value in count_dict.values():
+        print(value)
+
+    for key, value in count_dict.items():
+        print(f"{key}: {value}")
+    ```
+
+- **Code Example**:
+    ```python
+    from collections import defaultdict
+
+    # Sample data: tuples of (key, value)
+    data = [('fruits', 'apple'), ('fruits', 'banana'), ('fruits', 'orange'),
+            ('vegetables', 'carrot'), ('vegetables', 'spinach'), ('grains', 'rice')]
+
+    # Initialize defaultdict with list as the default_factory
+    grouped_dict = defaultdict(list)
+
+    # Group elements by key
+    for key, value in data:
+        grouped_dict[key].append(value)
+
+    # Iterate over the dictionary and print key-value pairs
+    for key, values in grouped_dict.items():
+        print(f"{key}: {values}")
+
+    fruits: ['apple', 'banana', 'orange']
+    vegetables: ['carrot', 'spinach']
+    grains: ['rice']
+
+    from collections import defaultdict
+
+    # Custom default factory
+    def default_value():
+        return {'count': 0, 'items': []}
+
+    custom_dict = defaultdict(default_value)
+    custom_dict['a']['count'] += 1
+    custom_dict['a']['items'].append('apple')
+    custom_dict['b']['count'] += 2
+    custom_dict['b']['items'].append('banana')
+
+    print(custom_dict)
+    # Output: defaultdict(<function default_value at 0x...>, {'a': {'count': 1, 'items': ['apple']}, 'b': {'count': 2, 'items': ['banana']}})
+    ```
+
+---
 
 #### Heaps
 - **Definition**: A heap is a special tree-based data structure that satisfies the heap property.

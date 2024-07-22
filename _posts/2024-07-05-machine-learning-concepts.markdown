@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Machine Learning Algorithms"
+title:  "Machine Learning Concepts"
 date:   2024-07-05 00:04:58 +0530
 categories: general
-summary: Machine Learning Algorithms.
+summary: Machine Learning Basic Concepts.
 ---
 
 ---
