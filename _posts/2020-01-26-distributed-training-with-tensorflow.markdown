@@ -2,7 +2,7 @@
 layout: post
 title:  "Distributed Training with Tensorflow"
 date:   2020-01-26 00:04:58 +0530
-categories: general
+categories: machine-learning
 summary: Distributed training is used to speed up the time-consuming task of training machine learning models as dataset size increases.
 ---
 

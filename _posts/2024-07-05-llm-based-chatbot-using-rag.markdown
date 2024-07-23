@@ -2,7 +2,7 @@
 layout: post
 title: "LLM Based Chatbot using RAG"
 date: 2024-07-05 00:04:58 +0530
-categories: general
+categories: machine-learning
 summary: LLM based chatbot using RAG.
 ---
 

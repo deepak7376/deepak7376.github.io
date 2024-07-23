@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Interview Preparation Roadmap"
-date:   2022-01-15 00:04:58 +0530
-categories: general
+date:   2019-01-29 00:04:58 +0530
+categories: interview
 summary: Consistency and regular practice are key. Stay focused, and you'll be well-prepared for your interviews. Good luck!.
 ---
 

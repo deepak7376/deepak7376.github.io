@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Python Data Structures and Algorithms (DSA)"
-date:   2024-07-05 00:04:58 +0530
-categories: general
+date:   2019-01-25 00:04:58 +0530
+categories: dsa
 summary: Contains advance python DSA concepts.
 ---
 

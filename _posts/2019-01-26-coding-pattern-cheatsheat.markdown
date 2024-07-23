@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Interview Coding Patterns Cheatsheet"
-date:   2024-07-05 00:04:58 +0530
-categories: general
-summary: Interview Coding Patterns Cheatsheet.
+title:  "Coding Patterns Cheatsheet"
+date:   2019-01-26 00:04:58 +0530
+categories: dsa
+summary: Coding Patterns Cheatsheet.
 ---
 
 ---
 
-## Interview Coding Patterns Cheatsheet
+## Coding Patterns Cheatsheet
 
 ### 1. Two Pointers
 Used for problems involving pairs in an array or linked list.

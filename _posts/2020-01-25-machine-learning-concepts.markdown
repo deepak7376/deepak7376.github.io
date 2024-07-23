@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Machine Learning Concepts"
-date:   2024-07-05 00:04:58 +0530
-categories: general
+date:   2020-01-25 00:04:58 +0530
+categories: machine-learning
 summary: Machine Learning Basic Concepts.
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Time Series Forecasting"
 date:   2020-01-26 00:04:58 +0530
-categories: general
+categories: machine-learning
 summary: Time series forecasting problems can be approached using various methods, including statistical and machine learning methods. This article focuses primarily on machine learning. Statistical methods may be covered in upcoming articles.
 ---
 
