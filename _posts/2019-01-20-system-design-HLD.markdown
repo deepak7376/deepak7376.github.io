@@ -8,27 +8,28 @@ summary: Basics of System Design.
 # Basics of System Design
 
 ## 1. What happens when you hit a URL in a browser
-### DNS Resolution
-- Converts the human-readable domain name (e.g., www.example.com) into an IP address.
-- Uses a hierarchical structure: Root DNS, TLD DNS (Top-Level Domain), and Authoritative DNS servers.
-- The browser caches DNS responses to reduce latency on subsequent requests.
+When you hit a URL in a browser, several processes occur to retrieve and display the webpage. Here's a simplified block diagram representing these steps:
 
-### TCP/IP Connection
-- Establishes a connection between the client and server using the Transmission Control Protocol (TCP).
-- The three-way handshake process: SYN, SYN-ACK, ACK.
-- Ensures reliable communication and data integrity.
+1. **URL Entry**: The user enters a URL in the browser's address bar.
+2. **DNS Lookup**: The browser contacts a DNS server to resolve the domain name to an IP address.
+3. **TCP Connection**: The browser establishes a TCP connection with the web server using the IP address.
+4. **HTTP Request**: The browser sends an HTTP request to the web server for the desired resource.
+5. **Server Processing**: The web server processes the request and prepares an HTTP response.
+6. **HTTP Response**: The server sends the HTTP response back to the browser.
+7. **Rendering**: The browser renders the received content and displays it to the user.
 
-### HTTP Request/Response Cycle
-- The browser sends an HTTP request to the server, specifying the URL and method (GET, POST, etc.).
-- The server processes the request and returns an HTTP response with a status code, headers, and optionally a body (e.g., HTML, JSON).
-- The browser interprets the response and renders the content.
+Here’s a simple block diagram:
 
-### Rendering the Page
-- The browser parses the HTML, CSS, and JavaScript.
-- Constructs the DOM (Document Object Model) and CSSOM (CSS Object Model).
-- Executes JavaScript, which may modify the DOM and CSSOM.
-- Paints the final visual representation on the screen.
+```
++---------+       +-----------+       +---------+       +--------+       +---------+       +---------+       +---------+       +---------+
+|  User   |--->---|  Browser  |--->---|  DNS    |--->---|  IP    |--->---|  TCP    |--->---|  HTTP   |--->---|  Server  |--->---| Browser |
+| Action  |       |           |       | Lookup  |       | Address|       | Conn.   |       | Request |       | Process  |       | Rendering |
++---------+       +-----------+       +---------+       +--------+       +---------+       +---------+       +---------+       +---------+
+```
 
+This diagram highlights the main components and interactions involved when a URL is hit in a browser.
+
+---
 ## 2. Distributed Systems
 ### Characteristics of Distributed Systems
 - Multiple independent components interact to achieve a common goal.
@@ -51,24 +52,52 @@ summary: Basics of System Design.
 - Replication: Storing copies of data on multiple nodes to ensure availability and reliability.
 - Techniques include active-passive and active-active replication.
 
+---
+
 ## 3. Microservices
-### Advantages and Disadvantages
-- Advantages: Scalability, flexibility, independent deployment, technology diversity.
-- Disadvantages: Increased complexity, network latency, data consistency challenges.
+### Microservice Architecture for E-commerce Application
 
-### Service Discovery
-- Mechanism for services to find and communicate with each other.
-- Uses service registries (e.g., Consul, Eureka) and service discovery protocols (e.g., DNS-based, HTTP-based).
+```
++--------+        +--------------+        +------------------+
+| Client |<----->|  API Gateway  |<----->| Aggregation Svc   |
++--------+        +--------------+        +------------------+
+                                         /        |         \
+                                +---------------+ | +---------------+
+                                | User Service   | | | Product Service |
+                                | User Database  | | | Product Database|
+                                +---------------+ | +---------------+
+                                | Order Service  | | | Payment Service |
+                                | Order Database | | | Payment Database|
+                                +---------------+ | +---------------+
+                                | Inventory Svc  | | 
+                                | Inventory DB   | | 
+                                +---------------+ | 
+                                | Message Broker  |
+                                +-----------------+
+```
 
-### Inter-service Communication (REST, gRPC, Message Queues)
-- REST: Simple, stateless communication using HTTP.
-- gRPC: High-performance RPC framework using Protocol Buffers.
-- Message Queues: Asynchronous communication using brokers (e.g., RabbitMQ, Kafka).
+### Explanation
 
-### Service Orchestration and Choreography
-- Orchestration: Centralized control over service interactions, often using an orchestrator (e.g., Kubernetes).
-- Choreography: Decentralized interaction where services react to events.
+1. **Client**: Sends requests to the API Gateway.
+2. **API Gateway**: Routes requests to the Aggregation Service for requests that require data from multiple microservices.
+3. **Aggregation Service**: 
+   - **User Service**: Fetches user-related data and interacts with the User Database.
+   - **Product Service**: Retrieves product information from the Product Database.
+   - **Order Service**: Gathers order details from the Order Database.
+   - **Payment Service**: Obtains payment status from the Payment Database.
+   - **Inventory Service**: Checks inventory levels in the Inventory Database.
+4. **Aggregation Service**: Combines data from the above services to provide a unified response.
+5. **Message Broker**: Ensures asynchronous communication between services as needed.
 
+### Use Cases for Aggregation Service
+
+1. **User Dashboard**: Combines user profile, recent orders, and payment status.
+2. **Product Details Page**: Aggregates product information, inventory status, and user reviews.
+3. **Order Summary**: Gathers order details, payment status, and shipment tracking.
+
+By using an Aggregation Service, the system simplifies complex data retrieval processes for the client, reduces the number of client-server interactions, and improves overall system performance.
+
+---
 ## 4. Data Partitioning
 ### Horizontal vs Vertical Partitioning
 - Horizontal Partitioning: Dividing data across different nodes (sharding).
@@ -84,6 +113,7 @@ summary: Basics of System Design.
 - List Partitioning: Dividing data based on predefined lists.
 - Composite Partitioning: Combining multiple partitioning methods.
 
+---
 ## 5. Caching
 ### Caching Strategies (Write-through, Write-back, Write-around)
 - Write-through: Data is written to both the cache and the underlying storage.
@@ -99,6 +129,7 @@ summary: Basics of System Design.
 - Redis: In-memory data structure store, supports complex data types, persistence, and replication.
 - Memcached: High-performance distributed memory caching system, simple key-value store.
 
+---
 ## 6. SQL vs NoSQL
 ### Relational vs Non-relational Databases
 - SQL (Relational): Structured data, predefined schema, ACID properties.
@@ -112,6 +143,7 @@ summary: Basics of System Design.
 - SQL: Financial systems, ERP, CRM.
 - NoSQL: Social media, real-time analytics, IoT applications.
 
+---
 ## 7. Consistent Hashing
 ### How Consistent Hashing Works
 - Distributes data across nodes in a way that minimizes reorganization when nodes are added or removed.
@@ -123,6 +155,7 @@ summary: Basics of System Design.
 ### Virtual Nodes
 - Nodes are assigned multiple positions on the hash ring to improve load distribution and fault tolerance.
 
+---
 ## 8. Sync vs Async
 ### Synchronous and Asynchronous Processing
 - Synchronous: Operations are performed sequentially, blocking until completion.
@@ -136,6 +169,7 @@ summary: Basics of System Design.
 - Synchronous: Simplicity, predictable behavior.
 - Asynchronous: Higher performance, better resource utilization.
 
+---
 ## 9. Resilience and Fallback
 ### Circuit Breaker Pattern
 - Prevents repeated failures by stopping requests to a failing service.
@@ -152,11 +186,67 @@ summary: Basics of System Design.
 ---------
 # System Design Questions
 
-## 10. Design URL Shortening Service
-- Requirements and constraints
-- Database schema
-- API design
-- Handling collisions
+## 10. Design URL Shortening Service (Tiny URL)
+
+#### Requirements
+
+**Functional Requirements**:
+1. Users can generate short links from the given URL.
+2. Redirect to the original URL when clicking on the short link.
+3. Users can generate custom short links.
+4. Expiration of links after some duration.
+
+**Non-Functional Requirements**:
+1. The system should be highly available because if the service is down, all links become dead.
+2. Generated links should not be easily guessable.
+3. Redirection should take less time (low latency).
+
+#### Capacity Estimation and Constraints
+
+**Traffic Estimate**:
+- Assume a 100:1 read-write ratio for a read-heavy system.
+- 500 million new URLs added per month.
+- 500 million * 100 = 50 billion redirections per month.
+
+**Queries Per Second (QPS)**:
+- Write: 500 million / (30 days * 24 hours * 3600 seconds) ≈ 200 writes per second.
+- Read: 200 * 100 = 20,000 reads per second.
+
+**Storage (Assume for 5 years)**:
+- 200 writes per second * 1KB per URL * 5 years * 365 days * 24 hours * 3600 seconds ≈ 30 TB.
+
+**Bandwidth**:
+- Downlink: 200 writes per second * 1KB = 200KB per second.
+- Uplink: 200KB * 100 = 20MB per second.
+
+**Memory Estimate**:
+- Follow the 80-20 rule: 20% of URLs generate 80% of traffic.
+- 500 million writes per month.
+- 20,000 requests per second * 24 hours * 3600 seconds = 1.7 billion requests per day.
+- 20% of 1.7 billion requests need ≈ 170GB of memory.
+
+#### Algorithm
+
+**Short URL Generation**:
+1. Generate a unique short URL using a hashing algorithm.
+2. Check for collisions:
+   - If a collision occurs, append additional characters or rehash.
+3. Store the original URL and short URL in the database.
+
+**Redirection**:
+1. When a short URL is accessed, query the database for the original URL.
+2. Increment the access count.
+3. Redirect to the original URL.
+
+**Expiration Handling**:
+1. Store the creation timestamp of each short URL.
+2. Periodically check for expired URLs and remove them from the database.
+
+**Handling Custom URLs**:
+1. Allow users to specify a custom short URL.
+2. Check for availability of the custom URL before storing.
+
+---
 
 ## 11. Design Instagram Timeline
 - Requirements and constraints
