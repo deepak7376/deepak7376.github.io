@@ -5,8 +5,203 @@ date:   2019-01-18 00:04:58 +0530
 categories: system-design
 summary: System Design-LLD.
 ---
----
 
+### Key Terms in Low-Level Design
+
+1. **Composition**
+2. **Aggregation**
+3. **Inheritance**
+4. **Polymorphism**
+5. **Abstraction**
+6. **Encapsulation**
+7. **Association**
+8. **Dependency**
+
+#### 1. Composition
+Composition is a strong form of association where one class owns another class, and the composed object cannot exist without the owning object.
+
+**Example**:
+```python
+class Engine:
+    def __init__(self, horsepower):
+        self.horsepower = horsepower
+
+class Car:
+    def __init__(self, make, model, horsepower):
+        self.make = make
+        self.model = model
+        self.engine = Engine(horsepower)  # Car owns Engine
+
+    def display_info(self):
+        print(f"{self.make} {self.model} with {self.engine.horsepower} HP")
+
+car = Car("Toyota", "Corolla", 130)
+car.display_info()  # Output: Toyota Corolla with 130 HP
+```
+
+#### 2. Aggregation
+Aggregation is a weaker form of association where one class contains another class, but the contained class can exist independently.
+
+**Example**:
+```python
+class Library:
+    def __init__(self, name):
+        self.name = name
+        self.books = []  # Library can contain many books
+
+    def add_book(self, book):
+        self.books.append(book)
+
+class Book:
+    def __init__(self, title):
+        self.title = title
+
+library = Library("City Library")
+book1 = Book("1984")
+book2 = Book("Brave New World")
+
+library.add_book(book1)
+library.add_book(book2)
+
+for book in library.books:
+    print(book.title)  # Output: 1984, Brave New World
+```
+
+#### 3. Inheritance
+Inheritance allows a class to inherit properties and methods from another class.
+
+**Example**:
+```python
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name} says Woof!"
+
+dog = Dog("Buddy")
+print(dog.speak())  # Output: Buddy says Woof!
+```
+
+#### 4. Polymorphism
+Polymorphism allows methods to be used interchangeably among different classes through inheritance.
+
+**Example**:
+```python
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+def animal_sound(animal):
+    print(animal.speak())
+
+dog = Dog()
+cat = Cat()
+animal_sound(dog)  # Output: Woof!
+animal_sound(cat)  # Output: Meow!
+```
+
+#### 5. Abstraction
+Abstraction hides the complex implementation details and shows only the necessary features.
+
+**Example**:
+```python
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+rect = Rectangle(10, 20)
+print(rect.area())  # Output: 200
+```
+
+#### 6. Encapsulation
+Encapsulation restricts direct access to some of the object's components, which can prevent the accidental modification of data.
+
+**Example**:
+```python
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # Private attribute
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+            return amount
+        else:
+            return "Insufficient funds"
+
+    def get_balance(self):
+        return self.__balance
+
+account = BankAccount(1000)
+account.deposit(500)
+print(account.get_balance())  # Output: 1500
+```
+
+#### 7. Association
+Association is a relationship where all objects have their own lifecycle and there is no owner.
+
+**Example**:
+```python
+class Teacher:
+    def __init__(self, name):
+        self.name = name
+
+class Course:
+    def __init__(self, title):
+        self.title = title
+
+teacher = Teacher("Mr. Smith")
+course = Course("Mathematics")
+```
+
+#### 8. Dependency
+Dependency is a relationship where one class uses another class.
+
+**Example**:
+```python
+class Processor:
+    def process(self):
+        return "Processing data"
+
+class Computer:
+    def __init__(self, processor):
+        self.processor = processor
+
+    def run(self):
+        return self.processor.process()
+
+processor = Processor()
+computer = Computer(processor)
+print(computer.run())  # Output: Processing data
+```
+---
 ## SOLID Principles Details
 
 ### 1. Single Responsibility Principle (SRP)
