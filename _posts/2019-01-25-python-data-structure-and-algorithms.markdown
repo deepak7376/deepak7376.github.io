@@ -37,17 +37,125 @@ summary: Contains advance python DSA concepts.
 - **Operations**: Insertion, Deletion, Traversal
 - **Code Example**:
     ```python
-    arr = [1, 2, 3, 4, 5]
+    # 1. Accessing Elements
+    my_list = [10, 20, 30, 40, 50]
 
-    # Insertion
-    arr.append(6)  # [1, 2, 3, 4, 5, 6]
+    # Indexing
+    first_element = my_list[0]
+    print("First element:", first_element)
 
-    # Deletion
-    arr.remove(3)  # [1, 2, 4, 5, 6]
+    # Slicing
+    sublist = my_list[1:4]
+    print("Sublist:", sublist)
 
-    # Traversal
-    for element in arr:
-        print(element)
+    # 2. Modifying Lists
+    # Assignment
+    my_list[0] = 100
+    print("After assignment:", my_list)
+
+    # Append
+    my_list.append(60)
+    print("After append:", my_list)
+
+    # Insert
+    my_list.insert(2, 'x')
+    print("After insert:", my_list)
+
+    # Extend
+    my_list.extend([70, 80])
+    print("After extend:", my_list)
+
+    # Remove
+    my_list.remove(30)
+    print("After remove:", my_list)
+
+    # Pop
+    popped_element = my_list.pop(2)
+    print("After pop:", my_list, "Popped element:", popped_element)
+
+    # Clear
+    my_list.clear()
+    print("After clear:", my_list)
+
+    # 3. Querying Lists
+    my_list = [10, 20, 20, 30, 40]
+
+    # Count
+    count_20 = my_list.count(20)
+    print("Count of 20:", count_20)
+
+    # Index
+    index_30 = my_list.index(30)
+    print("Index of 30:", index_30)
+
+    # 4. Sorting and Reversing
+    # Sort
+    my_list = [40, 10, 30, 20]
+    my_list.sort()
+    print("Sorted list:", my_list)
+
+    # Sorted (creates a new list)
+    sorted_list = sorted([50, 10, 30, 20])
+    print("Sorted list using sorted():", sorted_list)
+
+    # Reverse
+    my_list.reverse()
+    print("Reversed list:", my_list)
+
+    # Reversed (creates an iterator)
+    reversed_list = list(reversed(my_list))
+    print("Reversed list using reversed():", reversed_list)
+
+    # 5. Aggregations
+    # Length
+    length = len(my_list)
+    print("Length of the list:", length)
+
+    # Sum
+    total_sum = sum(my_list)
+    print("Sum of elements:", total_sum)
+
+    # Min
+    min_element = min(my_list)
+    print("Minimum element:", min_element)
+
+    # Max
+    max_element = max(my_list)
+    print("Maximum element:", max_element)
+
+    # 6. Copying Lists
+    # Shallow Copy
+    shallow_copy = my_list.copy()
+    print("Shallow copy:", shallow_copy)
+
+    # Deep Copy (for nested lists)
+    import copy
+    nested_list = [[1, 2], [3, 4]]
+    deep_copy = copy.deepcopy(nested_list)
+    print("Deep copy:", deep_copy)
+
+    # 7. List Comprehension
+    doubled = [x * 2 for x in my_list]
+    print("Doubled list using comprehension:", doubled)
+
+    # 8. Membership
+    is_20_in_list = 20 in my_list
+    print("Is 20 in the list?", is_20_in_list)
+
+    # 9. Iteration
+    print("Elements in the list:")
+    for x in my_list:
+        print(x)
+
+    # 10. Joining and Splitting
+    # Joining
+    string_list = ['a', 'b', 'c']
+    joined_string = ''.join(string_list)
+    print("Joined string:", joined_string)
+
+    # Splitting
+    split_list = "a,b,c".split(',')
+    print("Split list:", split_list)
     ```
 
 ---
@@ -577,4 +685,4 @@ graph = {
 }
 
 print(dijkstra(graph, 'A'))  # Output: {'A': 0, 'B': 1, 'C': 3, 'D': 4}
-
+```
